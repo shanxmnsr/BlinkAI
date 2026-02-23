@@ -29,7 +29,9 @@ export async function POST(req: Request) {
             - Always use clear spacing between paragraphs.
             - Always use simple language.
             - Use bullet points when explaining lists.
-            - Keep answers short (3-6 lines) as long as the user does not demand for long answers.
+            - Always end with a natural concluding sentence.
+            - Never end mid-thought.
+            - If explaining something, finish with a supporting closing line.
             - Sound conversational, friendly and supportive.
             - Avoid very long paragraphs.
             - Make the response visually clean and easy to read.
@@ -44,7 +46,7 @@ export async function POST(req: Request) {
         },
       ],
       temperature: 0.7,
-      max_tokens: 150,
+      max_tokens: 1200,
     });
 
     return NextResponse.json({
